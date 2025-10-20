@@ -10,11 +10,11 @@ export const databaseProviders = [
     useFactory: (config: ConfigService) => {
       const dataSource = new DataSource({
         type: 'postgres', 
-        host: 'localhost',
-        port: 5432,
-        username: 'postgres',
-        password: '12345', 
-        database: 'backend_yajanuhagrefa',
+        host: config.get(' HOST')||'Localhost',
+        port: config.get ('PORT'),
+        username: config.get('USERNAME')||'root',
+        password: config.get('PASSWORD')|| 'PRUEBA', 
+        database: config.get ('DATABASE'),
        
       });
 
