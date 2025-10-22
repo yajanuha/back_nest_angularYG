@@ -21,6 +21,12 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
+<<<<<<< HEAD
     "types": ["node", "jest"]  
   }
 }
+=======
+     "types": ["node", "jest"]
+  }
+}
+>>>>>>> d52bdbae78b54397465463853f548d25784dc543

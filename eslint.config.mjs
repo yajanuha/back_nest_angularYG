@@ -31,4 +31,8 @@ export default tseslint.config(
       '@typescript-eslint/no-unsafe-argument': 'warn'
     },
   },
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> d52bdbae78b54397465463853f548d25784dc543

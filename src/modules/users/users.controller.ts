@@ -3,8 +3,13 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+<<<<<<< HEAD
 
 @UseGuards(JwtAuthGuard)
+=======
+@UseGuards(JwtAuthGuard)
+
+>>>>>>> d52bdbae78b54397465463853f548d25784dc543
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
@@ -14,6 +19,10 @@ export class UsersController {
     return this.usersService.create(createUserDto);
   }
 
+<<<<<<< HEAD
+=======
+  @UseGuards(JwtAuthGuard)
+>>>>>>> d52bdbae78b54397465463853f548d25784dc543
   @Get()
   findAll() {
     return this.usersService.findAll();
